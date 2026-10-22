@@ -4,7 +4,7 @@ This is your workspace for the **Analytics Starter** project: your first
 end-to-end data warehouse.
 
 - **Working path:** `/workspaces/student-analytics-starter` (Codespaces or VM)
-- **Project page:** https://z2h-academy.dev/es/roadmap/analytics-starter
+- **Project page:** https://z2h-academy.com/es/roadmap/analytics-starter
 - **Reference content:** private. TUTOR reads it and guides you; you do not
   need to clone it.
 
