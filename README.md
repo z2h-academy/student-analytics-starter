@@ -10,15 +10,28 @@ end-to-end data warehouse.
 
 ## What is this repo
 
-This repo starts **empty on purpose**. During the project you will build,
-with TUTOR's guidance:
+This repo ships the **synthetic dataset** of the project and the workspace
+where you build the pipeline:
 
-- a PostgreSQL star schema (`songplays` + four dimensions);
-- an idempotent Python ETL for the synthetic Melodix dataset;
-- the verification notebook that proves the row counts and match coverage.
+- `data/`: the Melodix sources (160 song JSON files and 30 daily log files).
+- everything else is built during the project with TUTOR's guidance: the
+  PostgreSQL star schema (`songplays` + four dimensions), the idempotent
+  Python ETL and the verification notebook.
 
 The reference implementation is not distributed here: TUTOR reads it and
 helps you construct your own version, step by step.
+
+### The dataset
+
+| Source | Path | Files | Grain |
+|---|---|---|---|
+| Song catalog | `data/song_data/<A>/<B>/<C>/<song_id>.json` | 160 | one song per file |
+| App activity | `data/log_data/2025/01/2025-01-01-events.json` | 30 | one event per line (JSONL) |
+
+The dataset is fully synthetic (CC0), built in UTC from a fixed seed and
+versioned: it is part of the repository, so you do not generate it. Do not
+edit it. Every count in the project (8,248 events, 7,061 `NextSong`, 4,544
+matched) comes from these exact files.
 
 ## How to start
 
@@ -54,6 +67,7 @@ whether you want to execute it automatically or manually.
 
 ## Repo rules
 
-- Never commit `.env`, `.venv`, `data/` or generated artifacts.
-- The workspace is yours: build the files during the sessions.
+- Never commit `.env` or `.venv`.
+- `data/` is versioned: keep it unmodified, so `git status` stays clean.
+- The workspace is yours: build the scripts during the sessions.
 - Keep the project at `/workspaces/student-analytics-starter`.
