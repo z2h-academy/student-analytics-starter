@@ -38,6 +38,50 @@ No lo edites. Todos los conteos del proyecto (8.248 eventos, 7.061 `NextSong`,
 
 ## Cómo empezar
 
+### Opción A: GitHub Codespaces (recomendado)
+
+GitHub Codespaces te da un entorno en la nube listo para usar, así que no
+necesitas instalar Python, Git ni Docker en tu máquina.
+
+Abre el repositorio en un codespace:
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/z2h-academy/student-analytics-starter)
+
+O inicia uno desde la terminal, si tienes instalado GitHub CLI:
+
+```bash
+gh codespace create -r z2h-academy/student-analytics-starter
+```
+
+El primer arranque tarda unos minutos mientras GitHub construye el contenedor.
+Cuando el editor se abra, espera a que aparezca el prompt de la terminal y
+confirma que el repositorio está ahí:
+
+```bash
+pwd        # /workspaces/student-analytics-starter
+ls data    # log_data  song_data
+```
+
+Después inicia el agente desde la raíz del repositorio:
+
+```bash
+opencode
+```
+
+> El repositorio no incluye una configuración `.devcontainer/`, así que el
+> codespace usa la imagen por defecto. Si el detalle del entorno importa para
+> tu sesión, ejecuta `devcontainer-info` en la terminal para ver qué imagen se
+> está usando.
+
+Para reutilizar el codespace más adelante, ábrelo de nuevo desde
+<https://github.com/codespaces> o con `gh codespace code`. Las cuentas
+gratuitas tienen una cuota mensual de horas de cómputo y almacenamiento;
+detener el codespace cuando terminas evita que se consuma. Los codespaces se
+eliminan automáticamente después de un período de retención (30 días por
+defecto), y puedes borrar uno antes con `gh codespace delete`.
+
+### Opción B: entorno local
+
 ```bash
 cd /workspaces/student-analytics-starter
 opencode
@@ -50,6 +94,10 @@ pregunta si quieres ejecutarlo de forma automática o manual.
 
 > No clones ni copies el contenido de referencia: es privado y se accede solo a
 > través del harness.
+
+> La preparación de la base de datos (PostgreSQL) no se cubre aquí: TUTOR te
+> acompaña con ella desde los docs del proyecto cuando la sesión llega a ese
+> paso.
 
 ## Requisitos
 

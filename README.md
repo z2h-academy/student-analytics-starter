@@ -37,6 +37,50 @@ matched) comes from these exact files.
 
 ## How to start
 
+### Option A: GitHub Codespaces (recommended)
+
+GitHub Codespaces gives you a ready-to-use cloud environment, so you do not
+need to install Python, Git or Docker on your machine.
+
+Open the repository in a codespace:
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/z2h-academy/student-analytics-starter)
+
+Or start one from the terminal, if you have the GitHub CLI installed:
+
+```bash
+gh codespace create -r z2h-academy/student-analytics-starter
+```
+
+The first launch takes a few minutes while GitHub builds the container. When
+the editor opens, wait for the terminal prompt to appear and confirm the
+repository is there:
+
+```bash
+pwd        # /workspaces/student-analytics-starter
+ls data    # log_data  song_data
+```
+
+Then start the agent from the repository root:
+
+```bash
+opencode
+```
+
+> The repository does not ship a `.devcontainer/` configuration, so the
+> codespace uses the default image. If the environment detail matters for your
+> session, run `devcontainer-info` in the terminal to see which image is in
+> use.
+
+To reuse the codespace later, open it again from
+<https://github.com/codespaces> or with `gh codespace code`. Free accounts have
+a monthly quota of core hours and storage; stopping the codespace when you are
+done keeps it from being consumed. Codespaces are deleted automatically after
+a retention period (30 days by default), and you can delete one early with
+`gh codespace delete`.
+
+### Option B: local environment
+
 ```bash
 cd /workspaces/student-analytics-starter
 opencode
@@ -49,6 +93,9 @@ whether you want to execute it automatically or manually.
 
 > Do not clone or copy the reference content: it is private and is accessed
 > only through the harness.
+
+> The database setup (PostgreSQL) is not covered here: TUTOR walks you through
+> it from the project docs when the session reaches that step.
 
 ## Requirements
 
