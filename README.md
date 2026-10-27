@@ -97,6 +97,70 @@ whether you want to execute it automatically or manually.
 > The database setup (PostgreSQL) is not covered here: TUTOR walks you through
 > it from the project docs when the session reaches that step.
 
+## Working with TUTOR
+
+TUTOR is not a list of commands: it understands where you are and adapts the
+answer. You can ask in your own words and it discovers the real content before
+replying.
+
+**Discover the catalog.** Ask what is available and it shows the roadmaps and
+their structure live, with no fixed catalog.
+
+```text
+List the roadmaps
+```
+
+**Understand the project before starting.** It gives you the big picture, what
+you will learn and how it is organized, without opening any files yourself.
+
+```text
+We are going to build the Analytics Starter project.
+Give me a summary of what I will learn.
+```
+
+```text
+Give me a strategic summary of phase-0 of Analytics Starter
+```
+
+**Move forward in order.** If you ask for the next step, it picks up where you
+left off and tells you what comes next in the roadmap or project.
+
+```text
+What comes after phase-0?
+```
+
+**Study a complete unit.** A project phase or a roadmap level is taught in
+three stages: theoretical base, lab plan and execution. You cannot skip the
+theory to jump straight into the lab.
+
+```text
+Start phase-1 of Analytics Starter
+```
+
+**Run the lab.** It can guide you step by step locally or run the commands in a
+codespace for you.
+
+```text
+Run the Analytics Starter lab in Codespaces
+```
+
+**Go deeper.** On any topic already covered, you can ask for examples,
+clarifications or a different explanation.
+
+```text
+Explain the fact table grain again with an example
+```
+
+**When something fails.** Report the error as it appears and TUTOR diagnoses it
+without you having to read the repo or copy reference implementations.
+
+```text
+I get this error when loading the data: <paste the error>
+```
+
+> TUTOR works only with the course material and your session state. If
+> something is not in the docs, it tells you instead of making it up.
+
 ## Requirements
 
 | Requirement | How to check |

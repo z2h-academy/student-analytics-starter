@@ -99,6 +99,70 @@ pregunta si quieres ejecutarlo de forma automática o manual.
 > acompaña con ella desde los docs del proyecto cuando la sesión llega a ese
 > paso.
 
+## Cómo trabajar con TUTOR
+
+TUTOR no es una lista de comandos: entiende en qué punto estás y adapta la
+respuesta. Puedes preguntarle con tus palabras y él descubre el contenido real
+antes de responder.
+
+**Descubrir el catálogo.** Pregúntale qué hay disponible y te muestra los
+roadmaps y su estructura en vivo, sin catálogos fijos.
+
+```text
+Lista los roadmaps
+```
+
+**Conocer el proyecto antes de empezar.** Te da el panorama, qué vas a
+aprender y cómo está organizado, sin que tengas que abrir los archivos.
+
+```text
+Vamos a desarrollar el proyecto Analytics Starter.
+Dame un resumen de lo que aprenderé.
+```
+
+```text
+Dame un resumen estratégico de la fase-0 de Analytics Starter
+```
+
+**Avanzar en orden.** Si le pides el siguiente paso, retoma dónde quedaste y
+te indica qué sigue dentro del roadmap o del proyecto.
+
+```text
+¿Qué sigue después de la fase-0?
+```
+
+**Estudiar una unidad completa.** Una fase de proyecto o un level de roadmap se
+enseña en tres fases: base teórica, plan del lab y ejecución. No puedes saltear
+la teoría para ir directo al lab.
+
+```text
+Empieza la fase-1 de Analytics Starter
+```
+
+**Ejecutar el lab.** Puede guiarte paso a paso en local o correr los comandos
+en un Codespace por ti.
+
+```text
+Ejecuta el lab de Analytics Starter en Codespaces
+```
+
+**Profundizar.** Sobre cualquier tema ya visto, puedes pedir ejemplos,
+aclaraciones o que te lo explique de otra forma.
+
+```text
+Explícame otra vez el grano de la tabla de hechos con un ejemplo
+```
+
+**Si algo falla.** Reporta el error tal como aparece y TUTOR diagnostica sin
+que tengas que leer el repo ni copiar implementaciones de referencia.
+
+```text
+Me sale este error al cargar los datos: <pega el error>
+```
+
+> TUTOR trabaja solo con el material del curso y el estado de tu sesión. Si
+> algo no está en los docs, te lo dice en lugar de inventarlo.
+
 ## Requisitos
 
 | Requisito | Cómo verificar |
