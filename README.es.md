@@ -168,9 +168,12 @@ Me sale este error al cargar los datos: <pega el error>
 | Requisito | Cómo verificar |
 |---|---|
 | Python 3.9+ (3.11+ para pandas 3.x) | `python3 --version` |
-| PostgreSQL 12+ (validado en 16) | `psql --version` o `pg_isready` |
 | Git | `git --version` |
-| Docker (opcional, para correr PostgreSQL en local) | `docker --version` |
+| Docker con Docker Compose (levanta PostgreSQL 16) | `docker compose version` |
+
+> **PostgreSQL corre siempre en un contenedor.** No instales PostgreSQL en tu
+> máquina para este proyecto: TUTOR te entrega el `compose.yaml` fijado en la
+> fase 1 y esa es la única vía soportada para levantar la base.
 
 ## Qué vas a aprender
 

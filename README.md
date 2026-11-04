@@ -166,9 +166,12 @@ I get this error when loading the data: <paste the error>
 | Requirement | How to check |
 |---|---|
 | Python 3.9+ (3.11+ for pandas 3.x) | `python3 --version` |
-| PostgreSQL 12+ (validated on 16) | `psql --version` or `pg_isready` |
 | Git | `git --version` |
-| Docker (optional, to run PostgreSQL locally) | `docker --version` |
+| Docker with the Compose plugin (runs PostgreSQL 16) | `docker compose version` |
+
+> **PostgreSQL runs in a container, always.** Do not install PostgreSQL on your
+> machine for this project: TUTOR gives you the pinned `compose.yaml` in phase 1
+> and that is the only supported way to run the database.
 
 ## What you will learn
 
